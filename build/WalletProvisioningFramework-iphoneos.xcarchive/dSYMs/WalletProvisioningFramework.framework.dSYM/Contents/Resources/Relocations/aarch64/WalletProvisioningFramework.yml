@@ -1,0 +1,28 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/shivra/Library/Developer/Xcode/DerivedData/WalletProvisioningFramework-cipcutvdmpdvtnbrnglhjlwfpkge/Build/Intermediates.noindex/ArchiveIntermediates/WalletProvisioningFramework/InstallationBuildProductsLocation/Library/Frameworks/WalletProvisioningFramework.framework/WalletProvisioningFramework'
+relocations:
+  - { offset: 0x5B9, size: 0x8, addend: 0x0, symName: _WalletProvisioningFrameworkVersionString, symObjAddr: 0x0, symBinAddr: 0x4E20, symSize: 0x0 }
+  - { offset: 0x5ED, size: 0x8, addend: 0x0, symName: _WalletProvisioningFrameworkVersionNumber, symObjAddr: 0x50, symBinAddr: 0x4E70, symSize: 0x0 }
+  - { offset: 0x743, size: 0x8, addend: 0x0, symName: '_$s27WalletProvisioningFramework25SecureElementPassProvider_pWOb', symObjAddr: 0x238, symBinAddr: 0x4248, symSize: 0x18 }
+  - { offset: 0x7B0, size: 0x8, addend: 0x0, symName: '_$ss12_ArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtF27WalletProvisioningFramework25SecureElementPassProvider_p_Tg5', symObjAddr: 0x2AC, symBinAddr: 0x42BC, symSize: 0x144 }
+  - { offset: 0x8A5, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameV2, symObjAddr: 0x3F0, symBinAddr: 0x4400, symSize: 0x50 }
+  - { offset: 0xA2E, size: 0x8, addend: 0x0, symName: '_$sSo13PKPassLibraryC27WalletProvisioningFrameworkE11fetchPasses2ofSayAC25SecureElementPassProvider_pGSo0A4TypeV_tF', symObjAddr: 0x0, symBinAddr: 0x4010, symSize: 0x1F8 }
+  - { offset: 0xC6F, size: 0x8, addend: 0x0, symName: '_$sSo13PKPassLibraryC27WalletProvisioningFramework04PassB8ProviderA2cDP11fetchPasses2ofSayAC013SecureElementfG0_pGSo0A4TypeV_tFTW', symObjAddr: 0x250, symBinAddr: 0x4260, symSize: 0x20 }
+  - { offset: 0xC88, size: 0x8, addend: 0x0, symName: '_$sSo13PKPassLibraryC27WalletProvisioningFramework04PassB8ProviderA2cDP019canAddSecureElementF024primaryAccountIdentifierSbSS_tFTW', symObjAddr: 0x270, symBinAddr: 0x4280, symSize: 0x3C }
+  - { offset: 0xD8C, size: 0x8, addend: 0x0, symName: '_$sSo19PKSecureElementPassC27WalletProvisioningFramework06SecurebC8ProviderA2cDP26primaryAccountNumberSuffixSSvgTW', symObjAddr: 0x0, symBinAddr: 0x4450, symSize: 0x4C }
+  - { offset: 0xE46, size: 0x8, addend: 0x0, symName: '_$sSo19PKSecureElementPassC27WalletProvisioningFramework06SecurebC8ProviderA2cDP26primaryAccountNumberSuffixSSvgTW', symObjAddr: 0x0, symBinAddr: 0x4450, symSize: 0x4C }
+  - { offset: 0xE73, size: 0x8, addend: 0x0, symName: '_$sSo19PKSecureElementPassC27WalletProvisioningFramework06SecurebC8ProviderA2cDP19passActivationStateSo0abcjK0VvgTW', symObjAddr: 0x4C, symBinAddr: 0x449C, symSize: 0x8 }
+  - { offset: 0xEA0, size: 0x8, addend: 0x0, symName: '_$sSo19PKSecureElementPassC27WalletProvisioningFramework06SecurebC8ProviderA2cDP24primaryAccountIdentifierSSvgTW', symObjAddr: 0x54, symBinAddr: 0x44A4, symSize: 0x4C }
+  - { offset: 0x1130, size: 0x8, addend: 0x0, symName: ___swift_project_boxed_opaque_existential_1, symObjAddr: 0x44C, symBinAddr: 0x4924, symSize: 0x24 }
+  - { offset: 0x1143, size: 0x8, addend: 0x0, symName: '_$s27WalletProvisioningFramework25SecureElementPassProvider_pWOc', symObjAddr: 0x470, symBinAddr: 0x4948, symSize: 0x44 }
+  - { offset: 0x1156, size: 0x8, addend: 0x0, symName: ___swift_destroy_boxed_opaque_existential_1, symObjAddr: 0x4B4, symBinAddr: 0x498C, symSize: 0x20 }
+  - { offset: 0x1169, size: 0x8, addend: 0x0, symName: '_$ss15ContiguousArrayV16_createNewBuffer14bufferIsUnique15minimumCapacity13growForAppendySb_SiSbtF27WalletProvisioningFramework25SecureElementPassProvider_p_Tg5', symObjAddr: 0x524, symBinAddr: 0x49FC, symSize: 0x1C }
+  - { offset: 0x1180, size: 0x8, addend: 0x0, symName: '_$s27WalletProvisioningFramework0B14StatusProviderCMa', symObjAddr: 0x540, symBinAddr: 0x4A18, symSize: 0x20 }
+  - { offset: 0x11D9, size: 0x8, addend: 0x0, symName: '_$ss22_ContiguousArrayBufferV20_consumeAndCreateNew14bufferIsUnique15minimumCapacity13growForAppendAByxGSb_SiSbtF27WalletProvisioningFramework25SecureElementPassProvider_p_Tg5', symObjAddr: 0x580, symBinAddr: 0x4A58, symSize: 0x144 }
+  - { offset: 0x145F, size: 0x8, addend: 0x0, symName: '_$s27WalletProvisioningFramework0B14StatusProviderC14lastDigitsList11passLibraryACSaySSG_AA04PassjE0_ptcfC', symObjAddr: 0x0, symBinAddr: 0x44F0, symSize: 0x50 }
+  - { offset: 0x149E, size: 0x8, addend: 0x0, symName: '_$s27WalletProvisioningFramework0B14StatusProviderC14lastDigitsList11passLibraryACSaySSG_AA04PassjE0_ptcfc', symObjAddr: 0x50, symBinAddr: 0x4540, symSize: 0x28 }
+  - { offset: 0x154C, size: 0x8, addend: 0x0, symName: '_$s27WalletProvisioningFramework0B14StatusProviderC6status10completionyySo08PKIssuerb9ExtensionD0Cc_tF', symObjAddr: 0x90, symBinAddr: 0x4568, symSize: 0x3BC }
+  - { offset: 0x19CC, size: 0x8, addend: 0x0, symName: '_$s27WalletProvisioningFramework0B14StatusProviderCfd', symObjAddr: 0x4D4, symBinAddr: 0x49AC, symSize: 0x24 }
+  - { offset: 0x19F9, size: 0x8, addend: 0x0, symName: '_$s27WalletProvisioningFramework0B14StatusProviderCfD', symObjAddr: 0x4F8, symBinAddr: 0x49D0, symSize: 0x2C }
+...

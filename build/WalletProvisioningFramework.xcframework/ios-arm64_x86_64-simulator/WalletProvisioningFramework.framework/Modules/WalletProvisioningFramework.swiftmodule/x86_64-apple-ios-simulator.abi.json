@@ -1,0 +1,687 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "WalletProvisioningFramework",
+    "printedName": "WalletProvisioningFramework",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PassLibraryProvider",
+        "printedName": "PassLibraryProvider",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchPasses",
+            "printedName": "fetchPasses(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any WalletProvisioningFramework.SecureElementPassProvider]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureElementPassProvider",
+                    "printedName": "any WalletProvisioningFramework.SecureElementPassProvider",
+                    "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PKPassType",
+                "printedName": "PassKit.PKPassType",
+                "usr": "c:@E@PKPassType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:27WalletProvisioningFramework19PassLibraryProviderP11fetchPasses2ofSayAA013SecureElementdF0_pGSo10PKPassTypeV_tF",
+            "mangledName": "$s27WalletProvisioningFramework19PassLibraryProviderP11fetchPasses2ofSayAA013SecureElementdF0_pGSo10PKPassTypeV_tF",
+            "moduleName": "WalletProvisioningFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : WalletProvisioningFramework.PassLibraryProvider>",
+            "sugared_genericSig": "<Self where Self : WalletProvisioningFramework.PassLibraryProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "canAddSecureElementPass",
+            "printedName": "canAddSecureElementPass(primaryAccountIdentifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:27WalletProvisioningFramework19PassLibraryProviderP019canAddSecureElementD024primaryAccountIdentifierSbSS_tF",
+            "mangledName": "$s27WalletProvisioningFramework19PassLibraryProviderP019canAddSecureElementD024primaryAccountIdentifierSbSS_tF",
+            "moduleName": "WalletProvisioningFramework",
+            "genericSig": "<τ_0_0 where τ_0_0 : WalletProvisioningFramework.PassLibraryProvider>",
+            "sugared_genericSig": "<Self where Self : WalletProvisioningFramework.PassLibraryProvider>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:27WalletProvisioningFramework19PassLibraryProviderP",
+        "mangledName": "$s27WalletProvisioningFramework19PassLibraryProviderP",
+        "moduleName": "WalletProvisioningFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ProvisioningStatusProvider",
+        "printedName": "ProvisioningStatusProvider",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(lastDigitsList:passLibrary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ProvisioningStatusProvider",
+                "printedName": "WalletProvisioningFramework.ProvisioningStatusProvider",
+                "usr": "s:27WalletProvisioningFramework0B14StatusProviderC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PassLibraryProvider",
+                "printedName": "any WalletProvisioningFramework.PassLibraryProvider",
+                "hasDefaultArg": true,
+                "usr": "s:27WalletProvisioningFramework19PassLibraryProviderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:27WalletProvisioningFramework0B14StatusProviderC14lastDigitsList11passLibraryACSaySSG_AA04PassjE0_ptcfc",
+            "mangledName": "$s27WalletProvisioningFramework0B14StatusProviderC14lastDigitsList11passLibraryACSaySSG_AA04PassjE0_ptcfc",
+            "moduleName": "WalletProvisioningFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "status",
+            "printedName": "status(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PassKit.PKIssuerProvisioningExtensionStatus) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PKIssuerProvisioningExtensionStatus",
+                    "printedName": "PassKit.PKIssuerProvisioningExtensionStatus",
+                    "usr": "c:objc(cs)PKIssuerProvisioningExtensionStatus"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:27WalletProvisioningFramework0B14StatusProviderC6status10completionyySo08PKIssuerb9ExtensionD0Cc_tF",
+            "mangledName": "$s27WalletProvisioningFramework0B14StatusProviderC6status10completionyySo08PKIssuerb9ExtensionD0Cc_tF",
+            "moduleName": "WalletProvisioningFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:27WalletProvisioningFramework0B14StatusProviderC",
+        "mangledName": "$s27WalletProvisioningFramework0B14StatusProviderC",
+        "moduleName": "WalletProvisioningFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "Import",
+        "name": "PassKit",
+        "printedName": "PassKit",
+        "declKind": "Import",
+        "moduleName": "WalletProvisioningFramework"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "SecureElementPassProvider",
+        "printedName": "SecureElementPassProvider",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "primaryAccountNumberSuffix",
+            "printedName": "primaryAccountNumberSuffix",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP26primaryAccountNumberSuffixSSvp",
+            "mangledName": "$s27WalletProvisioningFramework25SecureElementPassProviderP26primaryAccountNumberSuffixSSvp",
+            "moduleName": "WalletProvisioningFramework",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP26primaryAccountNumberSuffixSSvg",
+                "mangledName": "$s27WalletProvisioningFramework25SecureElementPassProviderP26primaryAccountNumberSuffixSSvg",
+                "moduleName": "WalletProvisioningFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : WalletProvisioningFramework.SecureElementPassProvider>",
+                "sugared_genericSig": "<Self where Self : WalletProvisioningFramework.SecureElementPassProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "passActivationState",
+            "printedName": "passActivationState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PassActivationState",
+                "printedName": "PassKit.PKSecureElementPass.PassActivationState",
+                "usr": "c:@E@PKSecureElementPassActivationState"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP19passActivationStateSo08PKSecureefiJ0Vvp",
+            "mangledName": "$s27WalletProvisioningFramework25SecureElementPassProviderP19passActivationStateSo08PKSecureefiJ0Vvp",
+            "moduleName": "WalletProvisioningFramework",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "PassActivationState",
+                    "printedName": "PassKit.PKSecureElementPass.PassActivationState",
+                    "usr": "c:@E@PKSecureElementPassActivationState"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP19passActivationStateSo08PKSecureefiJ0Vvg",
+                "mangledName": "$s27WalletProvisioningFramework25SecureElementPassProviderP19passActivationStateSo08PKSecureefiJ0Vvg",
+                "moduleName": "WalletProvisioningFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : WalletProvisioningFramework.SecureElementPassProvider>",
+                "sugared_genericSig": "<Self where Self : WalletProvisioningFramework.SecureElementPassProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "primaryAccountIdentifier",
+            "printedName": "primaryAccountIdentifier",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP24primaryAccountIdentifierSSvp",
+            "mangledName": "$s27WalletProvisioningFramework25SecureElementPassProviderP24primaryAccountIdentifierSSvp",
+            "moduleName": "WalletProvisioningFramework",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP24primaryAccountIdentifierSSvg",
+                "mangledName": "$s27WalletProvisioningFramework25SecureElementPassProviderP24primaryAccountIdentifierSSvg",
+                "moduleName": "WalletProvisioningFramework",
+                "genericSig": "<τ_0_0 where τ_0_0 : WalletProvisioningFramework.SecureElementPassProvider>",
+                "sugared_genericSig": "<Self where Self : WalletProvisioningFramework.SecureElementPassProvider>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP",
+        "mangledName": "$s27WalletProvisioningFramework25SecureElementPassProviderP",
+        "moduleName": "WalletProvisioningFramework",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKPassLibrary",
+        "printedName": "PKPassLibrary",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "fetchPasses",
+            "printedName": "fetchPasses(of:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[any WalletProvisioningFramework.SecureElementPassProvider]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "SecureElementPassProvider",
+                    "printedName": "any WalletProvisioningFramework.SecureElementPassProvider",
+                    "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "PKPassType",
+                "printedName": "PassKit.PKPassType",
+                "usr": "c:@E@PKPassType"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So13PKPassLibraryC27WalletProvisioningFrameworkE11fetchPasses2ofSayAC25SecureElementPassProvider_pGSo0A4TypeV_tF",
+            "mangledName": "$sSo13PKPassLibraryC27WalletProvisioningFrameworkE11fetchPasses2ofSayAC25SecureElementPassProvider_pGSo0A4TypeV_tF",
+            "moduleName": "WalletProvisioningFramework",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)PKPassLibrary",
+        "moduleName": "PassKit",
+        "isOpen": true,
+        "intro_iOS": "6.0",
+        "objc_name": "PKPassLibrary",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PassLibraryProvider",
+            "printedName": "PassLibraryProvider",
+            "usr": "s:27WalletProvisioningFramework19PassLibraryProviderP",
+            "mangledName": "$s27WalletProvisioningFramework19PassLibraryProviderP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PKSecureElementPass",
+        "printedName": "PKSecureElementPass",
+        "declKind": "Class",
+        "usr": "c:objc(cs)PKSecureElementPass",
+        "moduleName": "PassKit",
+        "isOpen": true,
+        "intro_iOS": "13.4",
+        "objc_name": "PKSecureElementPass",
+        "declAttributes": [
+          "Available",
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)PKPass",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "PassKit.PKPass",
+          "PassKit.PKObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SecureElementPassProvider",
+            "printedName": "SecureElementPassProvider",
+            "usr": "s:27WalletProvisioningFramework25SecureElementPassProviderP",
+            "mangledName": "$s27WalletProvisioningFramework25SecureElementPassProviderP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": []
+}
